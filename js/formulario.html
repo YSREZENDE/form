@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\styleform.css">
+    <meta charset="UTF-8">
+	<script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<header>
+    <h1 >Formulário de cadastro</h1>
+</header>
+<div class="f">
+    <form action="obg.html">
+        <label for="nome">Nome:</label>
+        <input type="text"name="name" id="nome" placeholder="Digite seu nome">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text"name="name" id="email" placeholder="exemplo@gmail.com" required>
+        <br>
+        <label for="phone">Celular:</label>
+        <input type="text"name="number" id="number" placeholder="(XX) 99999-9999"  pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" title="Número de telefone precisa ser no formato (99) 9999-9999" required>
+        <br>
+        <label for="email">Hora desejada:</label>
+        <input type="time"name="time" id="time" min="09:00" max="18:00" required >
+        <br>
+        <label for="site">Seu site:</label>
+        <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+        <br>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+        <br>
+        <label for="date">Data nasc:</label>
+        <input type="date" id="date">
+        <br>
+        <label for="cor">Cor favorita:</label>
+        <input type="color" name="color" id="color" required>
+        <br>
+        <label for="filhos">Quantos filhos:</label>
+        <input type="number" name="filhos" id="filhos" required min="0" >
+        <br>
+        <label for="peso">Peso:</label>
+        0<input type="range" id="peso" name="peso"  >200
+        <br>
+        <br>
+        <label for="">Genero:</label>
+        <select type="" name="genero"  required >
+        <br>
+        <option value="" disabled selected>...</option>
+        <option value="F">Feminino</option>
+        <option value="M">Masculino</option>
+        <option value="o">Outros</option></select>
+        <br>
+        <label> Estado:</label>
+        <select id="UF" name="UF">
+            <option value="">Selecione</option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+         </select>
+         <br>
+         <br>
+         <label for="msg">Mensagem:</label>
+         <textarea id="msg"></textarea>
+
+         <div class="bnt">
+            <button type="submit" id="enviar" onclick="validar()" >enviar</button>
+            <input type="reset" value="Reset" id="reset">
+         </div>
+         
+
+    </form>
+  
+</div>
+</body>
+</html>

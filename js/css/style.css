@@ -1,0 +1,40 @@
+body{
+    background-color: cornsilk;
+    color: white;
+}
+h1{
+    text-align: center;
+    color: black;
+}
+.d{
+      margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #a012bd;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    
+
+}
+
+input{
+    height: 30px;
+    border-radius: 8px;
+}
+
+.jp{
+    color: black;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    justify-content: center;
+
+}
+button{
+    cursor: pointer;
+}
